@@ -1,19 +1,19 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 int main(void) {
-	char name1[15]; // ÀÌ¸§À» scanf·Î ¹Þ±â À§ÇØ º¯¼ö »ý¼º(ÃÖ´ë 4±ÛÀÚ °í·ÁÇÏ¸é 15¸é Àû´ç)
-	int name2; // ÇÐ¹øÀ» ¹Þ±â À§ÇØ º¯¼ö »ý¼º  ¹®ÀÚ´Â char, Á¤¼ö´Â int
-	int name3; // »ý³â¿ùÀÏÀ» ¹Þ±â À§ÇØ º¯¼ö »ý¼º
-	char name4[50]; // ÇÐ°ú¸íÀ» ¹Þ±â À§ÇØ º¯¼ö »ý¼º(ÇÐ°ú¸íÀÌ ¾ó¸¶³ª ±æÁö ¸ð¸£´Ï ³Ë³ËÇÏ°Ô)
-	printf("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : "); // ÀÌ¸§À» ÀÔ·Â¹Þ±â À§ÇØ printf »ç¿ë
-	scanf_s("%s", name1, sizeof(name1));  // ¹®ÀÚ·Î ¹ÞÀ¸´Ï %s, %s´Â char name1¿¡ ´ëÀÀ
-	printf("ÇÐ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä : "); // ÇÐ¹øÀ» ¹Þ±â À§ÇØ printf »ç¿ë
-	scanf_s("%d", &name2); // Á¤¼ö·Î ¹ÞÀ» °ÍÀÌ´Ï %d, ¼ýÀÚ ¹ÞÀ» ¶© &ºÙ¿©ÁÜ
-	printf("»ý³â¿ùÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä : "); // »ý³â¿øÀÏÀ» ¹Þ±â À§ÇØ printf »ç¿ë
-	scanf_s("%d", &name3); // Á¤¼ö·Î ¹ÞÀ» °ÍÀÌ´Ï %d, ¼ýÀÚ ¹ÞÀ» ¶© &ºÙ¿©ÁÜ
-	printf("ÇÐ°ú¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä : "); // ÇÐ°ú¸íÀ» ¹Þ±â À§ÇØ printf »ç¿ë
-	scanf_s("%s", name4, sizeof(name4)); // ¹®ÀÚ·Î ¹ÞÀ¸´Ï %s, %s´Â char name4¿¡ ´ëÀÀ
-	printf("- ÀÌ¸§ : %s\n", name1); // ÀÔ·Â¹ÞÀº ÀÌ¸§ Ãâ·Â, %s´Â ¹®ÀÚ¿­ ¹Þ°í, ´ëÀÀÇÏ´Â name1, \nÀº ÁÙ¹Ù²Ù±â
-	printf("- ÇÐ¹ø : %d\n", name2); // ÀÔ·Â¹ÞÀº ÇÐ¹ø Ãâ·Â, %d´Â Á¤¼ö¸¦ ¹Þ°í, ´ëÀÀÇÏ´Â name2, \nÀº ÁÙ¹Ù²Ù±â
-	printf("- »ý³â¿ùÀÏ : %d\n", name3); // ÀÔ·Â¹ÞÀº »ý³â¿ùÀÏ Ãâ·Â, \nÀº ÁÙ¹Ù²Ù±â
-	printf("- ÇÐ°ú¸í : %s\n", name4); // ÀÔ·Â¹ÞÀº ÇÐ°ú¸í Ãâ·Â, \nÀº ÁÙ¹Ù²Ù±â
+	char name1[15]; // ì´ë¦„ì„ scanfë¡œ ë°›ê¸° ìœ„í•´ ë³€ìˆ˜ ìƒì„±(ìµœëŒ€ 4ê¸€ìž ê³ ë ¤í•˜ë©´ 15ë©´ ì ë‹¹)
+	int name2; // í•™ë²ˆì„ ë°›ê¸° ìœ„í•´ ë³€ìˆ˜ ìƒì„±  ë¬¸ìžëŠ” char, ì •ìˆ˜ëŠ” int
+	int name3; // ìƒë…„ì›”ì¼ì„ ë°›ê¸° ìœ„í•´ ë³€ìˆ˜ ìƒì„±
+	char name4[50]; // í•™ê³¼ëª…ì„ ë°›ê¸° ìœ„í•´ ë³€ìˆ˜ ìƒì„±(í•™ê³¼ëª…ì´ ì–¼ë§ˆë‚˜ ê¸¸ì§€ ëª¨ë¥´ë‹ˆ ë„‰ë„‰í•˜ê²Œ)
+	printf("ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš” : "); // ì´ë¦„ì„ ìž…ë ¥ë°›ê¸° ìœ„í•´ printf ì‚¬ìš©
+	scanf_s("%s", name1, sizeof(name1));  // ë¬¸ìžë¡œ ë°›ìœ¼ë‹ˆ %s, %sëŠ” char name1ì— ëŒ€ì‘
+	printf("í•™ë²ˆì„ ìž…ë ¥í•˜ì„¸ìš” : "); // í•™ë²ˆì„ ë°›ê¸° ìœ„í•´ printf ì‚¬ìš©
+	scanf_s("%d", &name2); // ì •ìˆ˜ë¡œ ë°›ì„ ê²ƒì´ë‹ˆ %d, ìˆ«ìž ë°›ì„ ë• &ë¶™ì—¬ì¤Œ
+	printf("ìƒë…„ì›”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš” : "); // ìƒë…„ì›ì¼ì„ ë°›ê¸° ìœ„í•´ printf ì‚¬ìš©
+	scanf_s("%d", &name3); // ì •ìˆ˜ë¡œ ë°›ì„ ê²ƒì´ë‹ˆ %d, ìˆ«ìž ë°›ì„ ë• &ë¶™ì—¬ì¤Œ
+	printf("í•™ê³¼ëª…ì„ ìž…ë ¥í•˜ì„¸ìš” : "); // í•™ê³¼ëª…ì„ ë°›ê¸° ìœ„í•´ printf ì‚¬ìš©
+	scanf_s("%s", name4, sizeof(name4)); // ë¬¸ìžë¡œ ë°›ìœ¼ë‹ˆ %s, %sëŠ” char name4ì— ëŒ€ì‘
+	printf("- ì´ë¦„ : %s\n", name1); // ìž…ë ¥ë°›ì€ ì´ë¦„ ì¶œë ¥, %sëŠ” ë¬¸ìžì—´ ë°›ê³ , ëŒ€ì‘í•˜ëŠ” name1, \nì€ ì¤„ë°”ê¾¸ê¸°
+	printf("- í•™ë²ˆ : %d\n", name2); // ìž…ë ¥ë°›ì€ í•™ë²ˆ ì¶œë ¥, %dëŠ” ì •ìˆ˜ë¥¼ ë°›ê³ , ëŒ€ì‘í•˜ëŠ” name2, \nì€ ì¤„ë°”ê¾¸ê¸°
+	printf("- ìƒë…„ì›”ì¼ : %d\n", name3); // ìž…ë ¥ë°›ì€ ìƒë…„ì›”ì¼ ì¶œë ¥, \nì€ ì¤„ë°”ê¾¸ê¸°
+	printf("- í•™ê³¼ëª… : %s\n", name4); // ìž…ë ¥ë°›ì€ í•™ê³¼ëª… ì¶œë ¥, \nì€ ì¤„ë°”ê¾¸ê¸°
 }
